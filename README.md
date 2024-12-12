@@ -8,7 +8,7 @@ $ . install/setup.bash
 $ ros2 launch laser_cartographer cartographer_pure_laser.launch.py
 ```
 
-## Main Parameter
+## Main Parameter(laser_2d.lua)
 ```bash
 -- 0改成0.10,比机器人半径小的都忽略
 TRAJECTORY_BUILDER_2D.min_range = 0.10
