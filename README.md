@@ -12,6 +12,12 @@ $ . install/setup.bash
 $ ros2 launch laser_cartographer cartographer_pure_laser.launch.py
 ```
 
+## How To Save
+```bash
+$ ros2 run nav2_map_server map_saver_cli -f {mapname}.pgm
+```
+
+
 ## Main Parameter(laser_2d.lua)
 ```bash
 -- 0改成0.10,比机器人半径小的都忽略
