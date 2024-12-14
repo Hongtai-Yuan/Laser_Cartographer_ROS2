@@ -17,6 +17,7 @@ $ ros2 launch laser_cartographer cartographer_pure_laser.launch.py
 $ ros2 run nav2_map_server map_saver_cli -f {mapname}.pgm
 ```
 
+## In general, we will use retouching software such as GUN to modify the.pgm file to make it better in the navigation.
 
 ## Main Parameter(laser_2d.lua)
 ```bash
