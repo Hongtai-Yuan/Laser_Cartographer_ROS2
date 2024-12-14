@@ -18,6 +18,10 @@ $ ros2 run nav2_map_server map_saver_cli -f {mapname}.pgm
 ```
 
 ## In general, we will use retouching software such as GUN to modify the.pgm file to make it better in the navigation.
+<p align="center">
+  <img src="readmefiles/Snipaste_2024-12-14_23-13-47.jpg" width="200">
+</p>
+
 
 ## Main Parameter(laser_2d.lua)
 ```bash
