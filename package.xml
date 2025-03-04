@@ -3,10 +3,22 @@
 <package format="3">
   <name>laser_cartographer</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="1501483814@qqcom">Y250HT</maintainer>
-  <license>TODO: License declaration</license>
+  <description>
+    A ROS 2 package for mapping environments using laser scan data.
+    This package integrates with the Cartographer SLAM library to create 2D maps.
+  </description>
+  <maintainer email="your.email@example.com">Your Name</maintainer>
+  <license>Apache License 2.0</license>
 
+  <!-- Dependencies -->
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>cartographer_ros</depend>
+
+  <!-- Test dependencies -->
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
@@ -16,3 +28,4 @@
     <build_type>ament_python</build_type>
   </export>
 </package>
+
