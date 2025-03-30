@@ -1,29 +1,29 @@
 # Laser_Cartographer_ROS2
-Based on cartographer and fishros, the warehouse implemented pure radar mapping in ros2 humble. In short, it only needs radar publication /scan topic instead of /odom to realize map construction. Most of the parameters have been adjusted. It has been tested on multiple radars with success.
+基于cartgrapher和fishros，仓库在ros2humble中实现了手持雷达制图。简而言之，只需要雷达发布/scan主题，而不需要/odom就可以实现地图的构建。大部分参数都调整过了。它已经成功地在多个雷达上进行了测试。
 
 <p align="center">
   <img src="readmefiles/1.png" width="500">
 </p>
 
-## Install And Use
+## 下载和使用
 ```bash
 $ colcon build
 $ . install/setup.bash
 $ ros2 launch laser_cartographer cartographer_pure_laser.launch.py
 ```
 
-## How To Save
+## 如何保存地图？
 ```bash
 $ ros2 run nav2_map_server map_saver_cli -f {mapname}.pgm
 ```
 
-## In general, we will use retouching software such as GUN to modify the.pgm file to make it better in the navigation.
+## 通常我们会使用GUN软件来对地图进行修正，这样就可以获得更好的导航效果
 <p align="center">
   <img src="readmefiles/Snipaste_2024-12-14_23-13-47.jpg" width="200">
 </p>
 
 
-## Main Parameter(laser_2d.lua)
+## 主要的参数(laser_2d.lua)
 ```bash
 -- 0改成0.10,比机器人半径小的都忽略
 TRAJECTORY_BUILDER_2D.min_range = 0.10
